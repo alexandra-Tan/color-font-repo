@@ -1,0 +1,82 @@
+
+/* основной цвет  текста #757575 */
+/* вторичный цвет текста #212121 */
+/* заголовок акцент кнопка адресс #212121 */
+/* адресс с прозрачностью почта телефон rgba(255, 255, 255, 0.6); */
+/* акцент синий #2196F3 */
+/* бекграунд основной #E5E5E5 */
+/* бекграунд #2F303A */
+/* бекграунд background: #F5F4FA;
+ */
+ /* background: #2F303A; футер
+ */
+
+body{
+    color: #757575;
+    background-color: #E5E5E5;}
+
+    footer, .hero{
+        background-color:  #2F303A;
+        
+    }
+    .team{
+        background-color: #F5F4FA ;
+    }
+/*  логотип */
+
+.logo{
+    color: #FFFFFF;
+
+}
+.logo-blu{
+    color: #2196F3;
+
+}
+/* Навигация */
+.link{
+    color: #212121;
+   
+}
+.link:focus, .link:hover {
+    color: #2196F3;
+}
+
+    /* контакты */
+    .contacts{
+        color: #757575;
+    }
+
+
+   header .contacts:focus, header .contacts:hover{
+        color: #2196F3;
+
+    }
+    /* главный заголовок */
+    .title{
+        color: #FFFFFF;
+
+    }
+    /* кнопка */
+.button{
+      color: #FFFFFF;
+        background-color: #2196F3;}
+/* заголовки} */
+
+h2,h3,h4{
+color: #212121;
+}
+
+.team  h3{
+    
+}
+/* футер */
+
+.location{
+    color:#FFFFFF;
+    
+
+}
+
+footer .contacts{
+    color: rgba(255, 255, 255, 0.6) ;
+}
