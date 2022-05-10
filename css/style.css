@@ -10,73 +10,155 @@
  */
  /* background: #2F303A; футер
  */
-
+:root {
+ 
+    --primary-text-color:#757575;
+    --secondary-text-color:#212121;
+    --contact-color:rgba(255, 255, 255, 0.6);
+    --color-accent:#2196F3 ;
+    --background-body:#E5E5E5;
+   
+    --background-team:#F5F4FA;
+    --background-footer:#2F303A;
+    --complementary-color:#FFFFFF;
+}
 body{
-    color: #757575;
-    background-color: #E5E5E5;}
+    color: var(--primary-text-color);
+    background-color: var(--background-body);
+    font-family: 'Roboto','Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height:1.7;
+
+}
 
     footer, .hero{
-        background-color:  #2F303A;
+        background-color: var(--background-footer);
         
     }
     .team{
-        background-color: #F5F4FA ;
+        background-color: var(--background-team);
     }
 /*  логотип */
 
 .logo{
-    color: #FFFFFF;
+    color: var(--complementary-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
 
 }
 .logo-blu{
-    color: #2196F3;
+    color: var(--color-accent);
 
 }
 /* Навигация */
 .link{
-    color: #212121;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.1;
+letter-spacing: 0.02em;
    
 }
 .link:focus, .link:hover {
-    color: #2196F3;
+    color: var(--color-accent);
 }
 
     /* контакты */
     .contacts{
-        color: #757575;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        line-height: 1.1;
+      letter-spacing: 0.02em;
     }
 
 
    header .contacts:focus, header .contacts:hover{
-        color: #2196F3;
+        color: var(--color-accent);
 
     }
     /* главный заголовок */
     .title{
-        color: #FFFFFF;
-
+        color: var(--complementary-color);
+        font-weight: 900;
+        font-size: 44px;
+         line-height: 1.4;
+         text-align: center;
+         letter-spacing: 0.06em;
+         text-transform: uppercase;
     }
     /* кнопка */
 .button{
-      color: #FFFFFF;
-        background-color: #2196F3;}
+      color: var(--complementary-color);
+        background-color: var(--color-accent);
+        font-weight: 700;
+       font-size: 16px;
+       line-height:1.9;
+       display: flex;
+       align-items: center;
+       text-align: center;
+    letter-spacing: 0.06em;
+    }
 /* заголовки} */
 
 h2,h3,h4{
-color: #212121;
+color: var(--secondary-text-color);
+}
+/* преимущество */
+.Benefits h3{
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+   
 }
 
-.team  h3{
+.Benefits p{
     
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+/* что можно реализовать */
+.choose h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em; 
+
+}
+/* наша команда */
+.team  h2 {
+ font-weight: 700;
+font-size: 36px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+
 }
 /* футер */
 
 .location{
-    color:#FFFFFF;
+    color: var(--complementary-color);
     
 
 }
 
 footer .contacts{
-    color: rgba(255, 255, 255, 0.6) ;
+    color: var(--contact-color);
+}
+/* кнопки в портфолио */
+
+.radio-buttons{
+    color: var(--secondary-text-color);
+    background-color:var(--background-team);
+
+
+}
+
+.radio-buttons:hover, .radio-buttons:focus{
+   color: var(--complementary-color);
+    background-color: var(--color-accent);
 }
