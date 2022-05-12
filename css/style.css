@@ -32,35 +32,35 @@ body{
 
 }
 
-    footer, .hero{
-        background-color: var(--background-footer);
-        
-    }
-    .team{
-        background-color: var(--background-team);
-    }
 /*  логотип */
+ .logo{
+     color: var(--secondary-text-color);
+   }
 
-.logo{
-    color: var(--complementary-color);
+ .logo-footer{
+     color: var(--complementary-color);
+    
+ }
+
+.logo, .logo-footer{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    text-decoration: none;}
 
-
-}
 .logo-blu{
-    color: var(--color-accent);
+    color: var(--color-accent);}
 
-}
+
 /* Навигация */
 .link{
     color: var(--secondary-text-color);
     font-weight: 500;
     line-height: 1.1;
-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
    
 }
 .link:focus, .link:hover {
@@ -73,10 +73,11 @@ letter-spacing: 0.02em;
         font-weight: 500;
         line-height: 1.1;
       letter-spacing: 0.02em;
+      text-decoration: none;
     }
 
 
-   header .contacts:focus, header .contacts:hover{
+   .contacts:focus,.contacts:hover{
         color: var(--color-accent);
 
     }
@@ -102,59 +103,65 @@ letter-spacing: 0.02em;
        text-align: center;
     letter-spacing: 0.06em;
     }
-/* заголовки} */
 
-h2,h3,h4{
-color: var(--secondary-text-color);
-}
-/* преимущество */
+
+
+/* преимущество  заголовок*/
 .Benefits h3{
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
    
 }
+/* текст ниже заголовка */
 
 .Benefits p{
     
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-/* что можно реализовать */
-.choose h2{
+/* что можно реализовать. наша команда заголовки  */
+.choose h2, .team  h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em; 
+    color: var(--secondary-text-color);
 
 }
 /* наша команда */
-.team  h2 {
- font-weight: 700;
-font-size: 36px;
+.team h3{
+ font-weight: 500;
+font-size: 16px;
 line-height: 1.2;
-text-align: center;
+
 letter-spacing: 0.03em;
+color: var(--secondary-text-color);
 
 }
-/* футер */
 
-.location{
-    color: var(--complementary-color);
+.team p{
+    line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
     
+    .team{
+        background-color: var(--background-team);
+    }
 
-}
 
-footer .contacts{
-    color: var(--contact-color);
-}
+
 /* кнопки в портфолио */
 
 .radio-buttons{
     color: var(--secondary-text-color);
     background-color:var(--background-team);
-
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 
 }
 
@@ -162,3 +169,34 @@ footer .contacts{
    color: var(--complementary-color);
     background-color: var(--color-accent);
 }
+/*  заголовки в портфолио */
+.portfolio h2{
+    color: var(--secondary-text-color);
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 2;
+     letter-spacing: 0.06em;
+
+}
+/*  текст в портволио */
+.portfolio p{
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+
+}
+/* футер */
+
+.location{
+    color: var(--complementary-color);
+    }
+
+footer .contacts{
+    color: var(--contact-color);}
+    footer, .hero{
+        background-color: var(--background-footer);
+        
+    }
+    .list, .list-contacts, .list-Benefits, .list-choose, .list-team, .list-button, .list-portfolio{
+        list-style: none;
+    }
